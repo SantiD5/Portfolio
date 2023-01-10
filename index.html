@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delgado blog</title>
+    <script src="/main.js"></script>
     <script
       src="https://kit.fontawesome.com/7a3229fdf6.js"
       crossorigin="anonymous"
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="home-body">
     <header>
@@ -31,10 +33,10 @@
             <a href="">Home</a>
           </li>
           <li>
-            <a href="/pages/perfil.html">About me</a>
+            <a href="#about-me">About me</a>
           </li>
           <li>
-            <as href="/pages/blogs.html">Proyects</as>
+            <a href="#proyects">Proyects</a>
           </li>
         </ul>
         <button href="">Contactame!</button>
@@ -45,27 +47,79 @@
       <section class="home-main-container">
         <div class="home-main-text-container">
           <h2>Fullstack developer</h2>
+
           <p>
-            I'm Santiago Delgado An enthusiast for building tech products with
-            full-stack software Engineering experience. Passionate about and
-            capable of working with a wide range of technologies and is
-            well-versed especially in JavaScript related tech. Always Keeping
-            technical skills updated and keen to learn something new.
-            Additionally, has a keen interest in blogging, startups, gaming, and
-            reading.
+            An Argentina based self-taught Fullstack Developer who specializes
+            in building exceptional digital experience.
           </p>
         </div>
         <div class="home-main-img-container">
-          <img src="/assets/profile-pic.jpg" alt="foto de perfil" />
+          <img
+            src="/assets/teaserImage_xxxx_croppedTeaserImage.jpg"
+            alt="foto de perfil"
+          />
         </div>
+      </section>
+
+      <section class="about-me-container" data-aos="fade-right" id="about-me">
+        <img src="./assets/profile-pic.jpg" alt="" />
+        <article>
+          <p class="titulo">Santiago <span class="surname">Delgado</span></p>
+          <h3>A bit about me</h3>
+          <div>
+            <p>
+              I'm passionate about deciphering challenging problems and creating
+              exceptional digital experience.
+            </p>
+            <p>
+              As I've grown as a developer, I've contributed to projects and
+              worked with other developers to create working applications and
+              have written code that are maintainable and easy to understand.
+            </p>
+            <p>
+              Through my studies, I've gained a solid understanding of web
+              development concepts, and have dedicated a lot of time to apply
+              these concepts to real-world scenarios and applications.
+            </p>
+            <p>
+              When I'm not trying to build, learning, exploring and thinking
+              about how to make things better 😉, you can catch me watching
+              football matches ⚽.
+            </p>
+          </div>
+        </article>
       </section>
 
       <aside>
         <h2 class="second-title">Proyectos</h2>
       </aside>
-      <section class="proyectos-main-container">
+
+      <section
+        class="proyectos-main-container"
+        data-aos="fade-right"
+        id="proyects"
+      >
         <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
+          <a href="https://www.clubatleticotucuman.com.ar/" target="_blank">
+            <img src="./assets/atleticotucuman.png" alt="" />
+          </a>
+          <h3>Atletico tucuman web page</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
+            magni dolore excepturi doloremque aliquam fugiat numquam molestias,
+            distinctio voluptatum porro atque debitis alias esse itaque
+            quibusdam dolor in? Minus?
+          </p>
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="proyectos-card">
+          <a
+            href="https://salesianeducation.com/es/tucuman-tucuman-massa-es/"
+            target="_blank"
+          >
+            <img src="./assets/massa.png" alt="" />
+          </a>
+          <h3>Lorenzo massa web page</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
             magni dolore excepturi doloremque aliquam fugiat numquam molestias,
@@ -75,7 +129,8 @@
           <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
+          <img src="./assets/profile-pic.jpg" alt="" />
+          <h3>Atletico tucuman web page</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
             magni dolore excepturi doloremque aliquam fugiat numquam molestias,
@@ -85,7 +140,19 @@
           <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
+          <img src="./assets/profile-pic.jpg" alt="" />
+          <i class="fa-brands fa-github"></i>
+          <h3>Atletico tucuman web page</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
+            magni dolore excepturi doloremque aliquam fugiat numquam molestias,
+            distinctio voluptatum porro atque debitis alias esse itaque
+            quibusdam dolor in? Minus?
+          </p>
+        </div>
+        <div class="proyectos-card">
+          <img src="./assets/profile-pic.jpg" alt="" />
+          <h3>Atletico tucuman web page</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
             magni dolore excepturi doloremque aliquam fugiat numquam molestias,
@@ -95,27 +162,8 @@
           <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
-            magni dolore excepturi doloremque aliquam fugiat numquam molestias,
-            distinctio voluptatum porro atque debitis alias esse itaque
-            quibusdam dolor in? Minus?
-          </p>
-          <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
-            magni dolore excepturi doloremque aliquam fugiat numquam molestias,
-            distinctio voluptatum porro atque debitis alias esse itaque
-            quibusdam dolor in? Minus?
-          </p>
-          <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="proyectos-card">
-          <img src="./assets/006-like.png" alt="" />
+          <img src="./assets/profile-pic.jpg" alt="" />
+          <h3>Atletico tucuman web page</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum iste
             magni dolore excepturi doloremque aliquam fugiat numquam molestias,
@@ -125,6 +173,11 @@
           <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
         </div>
       </section>
+      <section class="contact-container"></section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delgado blog</title>
+    <title>Santiago Delgado Portfolio</title>
     <script src="/main.js"></script>
     <script
       src="https://kit.fontawesome.com/7a3229fdf6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./css/estilo.css" />
     <link rel="stylesheet" href="/css/media-queries.css" />
-
     <link rel="stylesheet" href="/fonts/flaticon.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,16 +32,34 @@
         </h2>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#about-me">About me</a>
           </li>
           <li>
-            <a href="#about-me">About me</a>
+            <a href="">Skills</a>
           </li>
           <li>
             <a href="#proyects">Proyects</a>
           </li>
         </ul>
-        <button href="">Contactame!</button>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Santybreoo" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/SantiD5" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/santiago-delgado-279088229/?original_referer="
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -52,6 +72,7 @@
             An Argentina based self-taught Fullstack Developer who specializes
             in building exceptional digital experience.
           </p>
+          <button>Contactame!</button>
         </div>
         <div class="home-main-img-container">
           <img
@@ -61,9 +82,9 @@
         </div>
       </section>
 
-      <section class="about-me-container" data-aos="fade-right" id="about-me">
+      <section class="about-me-container" data-aos="zoom-in" id="about-me">
         <img src="./assets/profile-pic.jpg" alt="" />
-        <article>
+        <article class="about-me-article">
           <p class="titulo">Santiago <span class="surname">Delgado</span></p>
           <h3>A bit about me</h3>
           <div>
@@ -91,14 +112,10 @@
       </section>
 
       <aside>
-        <h2 class="second-title">Proyectos</h2>
+        <h2 class="second-title" id="proyects">Proyectos</h2>
       </aside>
 
-      <section
-        class="proyectos-main-container"
-        data-aos="fade-right"
-        id="proyects"
-      >
+      <section class="proyectos-main-container" data-aos="slide-up">
         <div class="proyectos-card">
           <a href="https://www.clubatleticotucuman.com.ar/" target="_blank">
             <img src="./assets/atleticotucuman.png" alt="" />

@@ -132,19 +132,17 @@ nav .profile-link a {
 .home-main {
 }
 .home-main section {
-  display: grid;
-  grid-column: 2;
-  justify-items: center;
-  margin-top: 80px;
 }
 .home-main-container {
-  min-height: 70vh;
+  max-height: 70vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 132px;
   border-radius: 2%;
+  margin-top: 80px;
+  place-items: center;
 }
 .home-main-text-container {
   display: flex;
@@ -173,7 +171,7 @@ nav .profile-link a {
 }
 .home-main-text-container button {
   margin: 20px;
-  align-self: flex-end;
+  align-self: flex-start;
   border: none;
   background: var(--red);
   padding: 12px 30px;
@@ -192,21 +190,24 @@ nav .profile-link a {
   font-weight: 700;
   font-size: 1.8rem;
 }
+aside .second-title {
+  padding-bottom: 20px;
+}
 .about-me-container {
   background: var(--secondary-background);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  padding-top: 50px;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+.about-me-container .about-me-img {
+  grid-row: 2;
+  place-self: center;
 }
 .about-me-container .about-me-article {
+  grid-row: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .about-me-container .about-me-container h3 {
   color: var(--text-color);
@@ -220,21 +221,26 @@ nav .profile-link a {
   padding-top: 1rem;
 }
 .about-me-container img {
-  width: 425px;
+  width: 570px;
+  padding-left: 22px;
 }
 .about-me-container article div p {
   padding-block-start: 2rem;
-  font-size: 1.6rem;
+  font-size: 1.59rem;
   line-height: normal;
   color: var(--paragraph);
+  padding-right: 100px;
 }
 
 .proyectos-main-container {
   height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  place-items: center;
 }
+
 .proyectos-card {
   width: 330px;
   height: 430px;
@@ -242,7 +248,6 @@ nav .profile-link a {
   box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 10px;
-  text-align: center;
   transition: all 0.25s;
   display: flex;
   flex-direction: column;
@@ -271,4 +276,60 @@ nav .profile-link a {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--paragraph);
+}
+
+.contact-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+  color: black;
+}
+.contact-container::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.left {
+  height: 100%;
+}
+.right {
+  padding: 25px 40px;
+}
+.right h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.right h2::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+}
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
 }

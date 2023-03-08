@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santiago Delgado Portfolio</title>
-    <script src="/main.js"></script>
+    <link rel="icon" href="./assets/profile-pic.jpg" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/7a3229fdf6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/main.js"></script>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./css/estilo.css" />
@@ -25,12 +26,19 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="home-body">
-    <header>
-      <nav>
+    <header class="header-container">
+      <nav class="header-nav nav">
         <h2 class="name" title="titulo">
           Santiago <span class="surname"> Delgado</span>
         </h2>
-        <ul>
+        <i
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          class="burger"
+          id="btn"
+        >
+        </i>
+        <ul class="nav-ul">
           <li>
             <a href="#about-me">About me</a>
           </li>
@@ -41,7 +49,7 @@
             <a href="#proyects">Proyects</a>
           </li>
         </ul>
-        <ul>
+        <ul class="nav-ul">
           <li>
             <a href="https://twitter.com/Santybreoo" target="_blank"
               ><i class="fa-brands fa-twitter"></i
@@ -60,6 +68,17 @@
             ></a>
           </li>
         </ul>
+        <ul class="primary-navigation" data-visible="false" id="primary-nav">
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
+            <a href="#proyects">Proyects</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -67,12 +86,11 @@
       <section class="home-main-container">
         <div class="home-main-text-container">
           <h2>Fullstack developer</h2>
-
-          <p>
+          <p class="test">
             An Argentina based self-taught Fullstack Developer who specializes
             in building exceptional digital experience.
           </p>
-          <button>Contactame!</button>
+          <a href="#contact">Contactame!</a>
         </div>
         <div class="home-main-img-container">
           <img
@@ -90,7 +108,7 @@
           <p class="titulo">Santiago <span class="surname">Delgado</span></p>
           <h3>A bit about me</h3>
           <div>
-            <p>
+            <p id="text">
               I'm passionate about deciphering challenging problems and creating
               exceptional digital experience.
             </p>
@@ -192,19 +210,46 @@
           <a href="www.facebook.com"><i class="fa-brands fa-github"></i></a>
         </div>
       </section>
-      <section class="contact-container">
-        <div class="contact-box">
-          <div class="left"></div>
-          <div class="right">
-            <h2>Contact me</h2>
-            <input type="text" name="" id="" class="field" />
-            <input type="email" name="" id="" class="field" />
-            <input type="text" name="" id="" class="field" />
-            <textarea class="field" placeholder="Message"></textarea>
-          </div>
-        </div>
+      <section id="contact" class="contact-container">
+        <h2>Contact me</h2>
+        <div class="border"></div>
+        <form action="" class="contact-form">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="field"
+            placeholder="Who are you?"
+          />
+          <input type="email" name="" id="" class="field" placeholder="Email" />
+          <textarea class="field" placeholder="Message"></textarea>
+          <input
+            type="submit"
+            value="submit"
+            placeholder="Message"
+            class="button"
+          />
+        </form>
       </section>
     </main>
+    <footer>
+      <p>© <span id="date">2023</span> Santiago Delgado</p>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="https://github.com/SantiD5">github</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/santiago-delgado-279088229/"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a href=""></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
